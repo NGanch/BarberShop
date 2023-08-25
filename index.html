@@ -8,12 +8,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/styles.css" />
-        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <!-- HEADER -->
         <header class="page-header container">
-            <a><svg></svg></a>
+            <a class="header-logo" href="index.html">
+                <svg width="64px" height="64px">
+                <use href="./image/symbol-defs.svg#icon-Logo"></use>
+            </svg>
+        </a>
+
+
             <nav class="header-nav">
                 <ul class="header-nav-list">
                     <li class="header-nav-item">
@@ -42,6 +48,14 @@
         <main>
              <!-- hero-section -->
             <section class="hero-section container">
+                <ul class="hero-social-list">
+                    <li class="hero-social-item">
+                        <a class="link" href="">Instagram</a>
+                    </li>
+                    <li class="hero-social-item">
+                        <a class="link" href="">Youtube</a>
+                    </li>
+                </ul>
                 <div class="hero-info">
                     <p class="description">A hair salon for men in Kyiv</p>
                     <h1 class="title">BarberShop</h1>
@@ -51,17 +65,10 @@
                     </p>
                 </div>
           
-                <ul class="hero-social-list">
-                    <li class="hero-social-item">
-                        <a class="link" href="">Instagram</a>
-                    </li>
-                    <li class="hero-social-item">
-                        <a class="link" href="">Youtube</a>
-                    </li>
-                </ul>
+
             </section>
             <!-- hero-section -->
-            <section class="about-section container">
+            <section class="about-section container section">
                     <ul class="about-list">
                         <li class="about-item">
                             <img class="about-img" src="./image/img-1.jpg" alt="Робота майстра" width="270" />
@@ -72,7 +79,7 @@
                     </ul>
 
                     <div class="about-info">
-                        <p class="description">О НАС</p>
+                        <p class="description description-before">О НАС</p>
                         <h2 class="title">Лучший Барбершоп твоего города</h2>
                         <p class="text">
                             Если ты хочешь добавить в свой образ
@@ -92,9 +99,10 @@
                     </div>
             </section>
             <!-- price-section -->
-            <section class="price-section container">
-                <p class="description">Проведи время в компании лучших мастеров</p>
+            <section class="price-section container section">
+                <p class="upper-text">Проведи время в компании лучших мастеров</p>
                 <h2 class="title">Услуги и цены</h2>
+                <div class="price-container">
                 <ul class="price-list">
                     <li class="price-item">
                         <p class="description">Мужская стрижка</p>
@@ -132,12 +140,13 @@
                             <p class="text">от 200 грн.</p>
                         </li>
                     </ul>
+                </div>
                     <button class="btn" type="button">онлайн-запись</button>
             </section>
             <!-- price-section -->
 
             <!-- services-section -->
-            <section class="services-section container">
+            <section class="services-section container section">
                 <ul class="services-list">
                     <li class="services-item">
                         <p class="description">600<span class="span">+</span></p>
@@ -168,7 +177,7 @@
             <!-- services-section -->
 
             <!-- team-section -->
-            <section class="team-section container">
+            <section class="team-section container section">
                 <p class="description">для настоящих ценителей атмосферы</p>
                 <h2 class="title">Наши мастера</h2>
                 <ul class="team-list">
@@ -176,23 +185,122 @@
                         <img class="team-img" src="./image/img-3.jpg" alt="photo of Barber" width="370" />
                         <h3 class="title">John Smith</h3>
                         <p class="text">Extreme Barber</p>
+                        <ul class="team-social-list">
+                            <li class="team-social-item">
+                                <a class="team-social-link">
+                                    <svg class = "team-icon" width="20px" height="20px">
+                                        <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>  
+                            </li>
+
+                            <li class="team-social-item">
+                                <a class="team-social-link">
+                                    <svg class = "team-icon" width="20px" height="20px">
+                                        <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>  
+                                </li>
+
+                                <li class="team-social-item">
+                                    <a class="team-social-link">
+                                        <svg class = "team-icon" width="20px" height="20px">
+                                            <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>   
+                                    </li>
+
+                                    <li class="team-social-item">
+                                        <a class="team-social-link">
+                                            <svg class = "team-icon" width="20px" height="20px">
+                                                <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>  
+                                        </li>
+                        </ul>
                     </li>
                     <li class="team-item">
                         <img class="team-img" src="./image/img-4.jpg" alt="photo of Barber" width="370" />
                         <h3 class="title">Michele Doe</h3>
                         <p class="text">Extreme Barber</p>
+                        <ul class="team-social-list">
+                            <li class="team-social-item">
+                                <a class="team-social-link">
+                                    <svg class = "team-icon" width="20px" height="20px">
+                                        <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>  
+                            </li>
+
+                            <li class="team-social-item">
+                                <a class="team-social-link">
+                                    <svg class = "team-icon" width="20px" height="20px">
+                                        <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>  
+                                </li>
+
+                                <li class="team-social-item">
+                                    <a class="team-social-link">
+                                        <svg class = "team-icon" width="20px" height="20px">
+                                            <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>   
+                                    </li>
+
+                                    <li class="team-social-item">
+                                        <a class="team-social-link">
+                                            <svg class = "team-icon" width="20px" height="20px">
+                                                <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>  
+                                        </li>
+                        </ul>
                     </li>
                     <li class="team-item">
                         <img class="team-img" src="./image/img-5.jpg" alt="photo of Barber" width="370" />
                         <h3 class="title">Alan Black</h3>
                         <p class="text">Extreme Barber</p>
+                        <ul class="team-social-list">
+                            <li class="team-social-item">
+                                <a class="team-social-link">
+                                    <svg class = "team-icon" width="20px" height="20px">
+                                        <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>  
+                            </li>
+
+                            <li class="team-social-item">
+                                <a class="team-social-link">
+                                    <svg class = "team-icon" width="20px" height="20px">
+                                        <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>  
+                                </li>
+
+                                <li class="team-social-item">
+                                    <a class="team-social-link">
+                                        <svg class = "team-icon" width="20px" height="20px">
+                                            <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>   
+                                    </li>
+
+                                    <li class="team-social-item">
+                                        <a class="team-social-link">
+                                            <svg class = "team-icon" width="20px" height="20px">
+                                                <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>  
+                                        </li>
+                        </ul>
                     </li>
                 </ul>
             </section>
             <!-- team-section -->
 
             <!-- gallery-section -->
-            <section class="gallery-section container">
+            <section class="gallery-section container section">
                 <p class="description">На латинском языке “барба” означает борода”</p>
                 <h2 class="title">Gallery</h2>
 
@@ -215,7 +323,27 @@
             <!-- gallery-section -->
 
             <!-- contact-section -->
-            <section class="contact-section container">
+            <section class="contact-section">
+                <div class="container contact-info-container">
+                <div class="form-container">
+                    <h2 class="form-title">Online-booking</h2>
+                    <form class="form">
+                        <label cla>
+                            Name*
+                            <input class="input" />
+                        </label>
+                        <label>
+                            Phone*
+                            <input class="input"/>
+                        </label>
+                        <label>
+                            Message
+                            <input class="input"/>
+                        </label>
+                        <button type="button">send</button>
+                    </form>
+                </div>
+
                 <div class="contact-container">
                     <h2 class="title">Контакты</h2>
     
@@ -236,6 +364,7 @@
                         <p class="text">Ежедневно с 9:00 до 22:00</p>
                     </div>
                 </div>
+            </div>
             </section>
             <!-- contact-section -->
         </main>

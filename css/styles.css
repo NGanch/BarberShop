@@ -658,10 +658,17 @@ button {
   .about-list {
     display: contents;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 30px;
   }
+  .about-item {
+    width: 330px;
+height: 235px;
 
+
+    /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08); */
+}
   .about-info .title {
     margin-bottom: 20px;
     color: #303030;
@@ -673,12 +680,20 @@ button {
   }
 
   .about-info .under-text {
-    margin-bottom: 77px;
+    /* margin-bottom: 77px; */
+    margin-bottom: 45px;
   }
 }
 /* ----------- TABLET ----------- */
 /* ----------- DESCTOP ----------- */
 @media screen and (min-width: 1200px) {
+  .about-list {
+    flex-direction: row;
+  }
+  .about-item {
+    width: 270px;
+    height: 445px;
+}
   .about-info .under-text {
     margin-bottom: 42px;
   }
@@ -941,8 +956,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   width: 418px;
-  height: 502px;
+/* height: 346px; */
 }
 .team-item .title {
   margin-top: 30px;
